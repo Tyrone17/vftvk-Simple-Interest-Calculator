@@ -1,10 +1,12 @@
-body {
+ body {
     background-color:black;
     font-family: arial;
     color: white;
     margin-left: 35%;
     text-align: left;
+    justify-content: left;
 }
+
 h1{
     color:grey;
     font-family: verdana;
