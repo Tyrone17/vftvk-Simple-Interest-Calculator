@@ -1,16 +1,46 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="maindiv">
+        <h1 id="header">Simple Interest Calculator</h1>
+        <!--create input elements for use in the calcultor /compute function-->
+        <!--validate the input for amount such that it warns an user of capturing a negative amount-->
+        Amount <input type="number" id="principal" oninput="validateInput()">
+        <br/>
+        <!--create an input of type range and update the value selected via a span element-->
+        Rate <input type="range" id="rate" min="1" max="20" step=0.25 value="10.25" onchange="updateRate()"> <span id="rate_val">10.25</span>% 
+        <br/>  
+        No. of Years <select id="years"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select> 
+        <br>
+        <br>
+        <!--create a on click event that runs the compute function in the .js document-->
+        <button onclick="compute()">Compute Interest</button>
+        <br>
+        <br>
+        <!--set a span element that will hold the result of the compute-->
+        <span id="result"> </span>
+        <br>
+        <footer>
+            <!--Set a footer that links to a social media page-->
+            &#169; This Calculator belongs to <a href="https://twitter.com/Tyrone_Maasdorp">@Tyrone_Maasdorp</a> 2022
+        </footer>
+        </div>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
     </body>
 </html>

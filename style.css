@@ -1,4 +1,33 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family: arial;
+    color: white;
+    margin-left: 35%;
+    margin-right: 0px;
+    
+}
+h1{
+    color:grey;
+    font-family: verdana;
+    
+}
+.maindiv {
+    background-color:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:25px;
+    align:center;
+}
 
+footer {
+    text-align:left;
+}
+#header {
+    text-align: center;
+}
 
+em {
+    font-weight: bold; 
+    color:blue;
+}
