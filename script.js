@@ -30,7 +30,14 @@ function compute () {
     interest = (principal * years * rate) /100;
     var amount = interest;
     var period = year+years;
-    
+    let x = document.getElementById("principal").value;
+    if (x==false) {
+      alert("The principal must a positive number");
+      document.reload()
+    }
+
+
+
     //write to the element with the id result the results from the compute function called
     document.getElementById("result").innerHTML="If you deposit <em>"+principal+"</em>,\<br\>at an interest rate of <em>"+rate+"</em>%\<br\>You will receive an amount of <em>"+amount+"</em>,\<br\>in the year <em>"+period+"</em>\<br\>"
 
